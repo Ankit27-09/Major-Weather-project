@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Weather App </title>
+</head>
+<body>
+    <!--  TITLE CONTAINER [ TITLE AND WITH CONVERSION DEGREE AND CELCIUS ] -->
+    <div class = "title-container">
+        <div class = "title"> <img src="./Images/aeroalert.jpeg" alt="Weather-img"> AEROALERT </div>
+        <div class="change-box">
+            <button class = "change-to-degree" disabled> °C </button> 
+            <button class = "change-to-farheneit"> f</button>
+       </div>
+    </div>
+    
+    <div class="container">
+        <div class="left-container">
+            <div class="search-inp ">
+                <div class = "locate-input">
+                    <i class="fa-solid fa-location-dot location-dot"></i>
+                    <input type="text" placeholder = "Enter your city" class = "search-input">
+                </div>
+                <button class = "searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class = "left-current-weather">
+            <div class = "temp-with-icon" >
+                <div> <img src="./Animations/Animation - Thunder.gif" alt="forecast-image" class = "animate-weather-condition"></div>
+               <div class = "temp-right">
+                <h2 class = "temp"> 28°C</h2>
+                <h2 class = "weather"> Rainy Day </h2>
+            </div>
+            </div>   
+            <h1 class = "city-name"> Bengaluru </h1>
+            <h2 class = "time"> 2:23:09 PM </h2>
+        </div>
+           
+            <div class="outer-box">
+                <div class="upper-box">
+                    <div class = "box1 box"> 
+                    <p class = "box-heading">  <i class="fa-solid fa-temperature-full"></i>  FEELS LIKE </p>
+                    <hr class = "box-hr">
+                <div class = "details-of-four">
+                    <h1 class = "feel"> 28°C </h1>
+                    <p class = "four-box-desc"> Humidity is making it feel warmer</p>
+                </div>
+                    </div>
+        
+                    <div class = "box2 box"> 
+                        <p class = "box-heading"> <i class="fa-solid fa-droplet"></i> PRECIPITATION </p>
+                        <hr class = "box-hr">
+                        <div class = "details-of-four">
+                        <h1 class = "precipitation"> 2.3'' </h1>
+                        <p class = "four-box-desc"> In last 24 hours </p>
+
+                    </div>
+                    </div>
+    
+                </div>
+                <div class="lower-box">
+                    <div class = "box3 box"> 
+                        <p class = "box-heading"> <i class="fa-regular fa-eye"></i> VISIBILITY </p>
+                        <hr class = "box-hr">
+                        <div class = "details-of-four">
+                        <h1 class = "visibility"> 6 mi </h1>
+                        <p class = "four-box-desc"> Visibitliy </p>
+                         </div>
+                         </div>
+        
+                    <div class = "box4 box">
+                        <p class = "box-heading"> <i class="fa-solid fa-water"></i> HUMIDITY </p>
+                        <hr class = "box-hr">
+                        <div class = "details-of-four">
+                        <h1 class = "humidity"> 82% </h1>
+                        <p class = "four-box-desc"> The dew point is 25° right now </p>
+                        </div>
+                    </div>
+    
+                </div>
+               
+            </div>
+           
+        </div>
+
+        <div class = "right-container">
+             
+            <div class = "hourly-container">
+                <div class = "hourly-content">
+                   
+                    <p class = "right-box-heading">  <i class="fa-solid fa-hourglass-start"></i> HOURLY FORECAST </p>
+                    <hr class = "right-line-box"> 
+                </div>
+                <div class="full-hourly"> 
+                    <!-- <div class="hourly-details">
+                        <p class = "hourly-desc"> 4:00</p>
+                        <h2 class = "hourly-temp"> 28°C </h2>
+                        <i class="fas fa-camera hourly-img"></i>
+                    </div> -->
+                    <!-- <div class="hourly-details">
+                        <p> 4:00</p>
+                        <h2> 28°C </h2>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="hourly-details">
+                        <p> 4:00</p>
+                        <h2> 28°C </h2>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="hourly-details">
+                        <p> 4:00</p>
+                        <h2> 28°C </h2>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="hourly-details">
+                        <p> 4:00</p>
+                        <h2> 28°C </h2>
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="hourly-details">
+                        <p> 4:00</p>
+                        <h2> 28°C </h2>
+                        <i class="fas fa-camera"></i>
+                    </div> -->
+                </div>
+                
+            </div>
+            <div class = "day-forecast">
+                <div class = "daily-content">
+                    <p class = "right-box-heading" > <i class="fa-solid fa-calendar-days"></i> 10 DAY FORECAST </p>
+                    <hr class = "right-line-box">  
+                </div>
+                <div class = "full-daily"> 
+                   
+                </div>
+            </div>
+
+            <div class = "wind-index">
+                <div class = "uv-index" >
+                    <p class = "right-box-heading"> <i class="fa-solid fa-temperature-three-quarters"></i> UV INDEX </p>
+                    <hr class = "right-line-box"> 
+                   <div class = "uv-box">
+                    <h2 class = "uv-number"> 3 </h2>
+                    <p class = "uv-condition"> Moderate</p>
+                    <input type="range" min="1" max="11" class="slider" id="myRange" disabled>
+                   </div> 
+                </div>
+
+                <div class = "wind-speed">
+                    <p class = "wind-box-heading"> <i class="fa-solid fa-wind"> </i> WIND </p>
+                    <div class = "wind-container">
+                        <div class="wind-speed-mph">
+                            <div class = "wind-mph"> 3 </div>
+                            <div class ="mph-wind-tite" >
+                                <h4> MPH </h4>
+                                <h4> wind </h4>
+                            </div>
+                        </div>
+                        <div class = "wind-image">  <img src="/WindDirections/south-west.png" alt="">  </div>
+                    </div>
+                    <hr class = "wind-line-box"> 
+                    <div class = "gust-speed-mph">
+                        <div class = "gust-mph"> 9 </div>
+                            <div class ="mph-gust-tite" >
+                                <h4> MPH </h4>
+                                <h4> Gusts </h4>
+                            </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        </div>
+    <script src = "script.js"></script>
+      <script src="https://ipinfo.io/json?callback=recordData"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-10-year-range.js" integrity="sha512-eIGAol0L0mhBTYexAKVNaH4dvcMTltcXKKMF4wBN/cZPAIOMwIcYsrGzdfuQmPbL/EYqJcxoefqQVjlLS9CR6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
